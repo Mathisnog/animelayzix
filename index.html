@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="animaxlogo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+        </style>
+    <title>Visualayzix</title>
+</head>
+<body>
+
+    <div class="navbar">
+
+        <ul>
+            <li> <a href="#Manga"> Manga</a></li>
+            <li> <a href="#News"> News</a></li>
+            <li> <a href="#Forum"> Forum</a></li>
+           
+                <a href="shop.html"><img src="fa8537fcb07eeff23819e289a6b11b04.jpg" alt=""class="logo" style="width: 40px;"> </a>>
+            <li class="logo"> <a href="#animax"> Visualayzix</a></li>
+        </ul>
+    </div>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="one-piece0269.jpg" alt="" style="width: 100%;">
+                <div class="text">One-piece</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="vinland.jpg" alt="" style="width: 100%;">
+                <div class="text">VINLAND SAGA</div>
+            </div>
+            <div class="mySlides fade">
+                <img src="demonslayer.png" alt="" style="width: 100%;">
+                <div class="text">DEMON SLAYER</div></div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+            <a class="next" onclick="plusSlides(1)">&#10095</a>
+        </div>
+        <hr class="rounded">
+
+        <h1 class="trending">
+            | TRENDING
+        </h1>
+
+        <div class="row">
+
+            <figure class="column">
+                <a href="support.html">
+                    <img src="dragon.png" alt="img" style = "width: 100%;"></a>
+            </figure>
+            <figure class="column">
+                <a href="jjk.html">
+                    <img src="jjk.jpg" alt="img" style = "width: 100%;"></a>
+            </figure>
+            <figure class="column">
+                <a href="tr.html">
+                    <img src="tr" alt="img" style = "width: 100%;"></a>
+            </figure>
+            <figure class="column">
+                <a href="sote.html">
+                    <img src="kakegurui.jpeg" alt="img" style = "width: 100%;"></a>
+            </figure>
+            <figure class="column">
+                <a href="mha.html">
+                    <img src="mha.png" alt="img" style = "width: 100%;"></a>
+            </figure>
+            <figure class="column">
+                <a href="onepm.html">
+                    <img src="one-piece0269.jpg" alt="img" style = "width: 100%;"></a>
+            </figure>
+
+
+            
+            <div class="column">
+                <img src="onepm.jpg" alt="" style = "width: 100%;">
+            </div>
+            <div class="column">
+                <img src="drS.jpg" alt="" style = "width: 100%;">
+            </div>
+            <div class="column">
+                <img src="yurionice.jpg" alt="" style = "width: 100%;">
+            </div>
+            <div class="column">
+                <img src="dragon.png" alt="" style = "width: 100%;">
+            </div>
+            <div class="column">
+                <img src="mha.png" alt="" style = "width: 100%;">
+            </div>
+            <div class="column">
+                <img src="nogamenolife.jpg" alt="" style = "width: 100%;">
+            </div>
+            <div class="column">
+                <img src="lycoris-recoil.jpg" alt="" style = "width: 100%;">
+            </div>
+            <div class="column">
+                <img src="overlord.jpg" alt="" style = "width: 100%;">
+            </div>
+        </div>
+
+        <div class="Subscribe">
+            <h1 class="A">ABOUT US</h1>
+            <h3 class="A"> Animax is a simple anime site with a lot of choices, we are completely free but with adds,
+                if you want premium benefits then <a href="">subscribe now</a>
+            </h3>
+        </div>
+
+
+
+
+        <script>
+            let slideIndex = 1;
+          showSlides(slideIndex);
+          
+          function plusSlides(n) {
+            showSlides(slideIndex += n);
+          }
+          
+          function currentSlide(n) {
+            showSlides(slideIndex = n);
+          }
+          
+          function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+           
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+           
+            slides[slideIndex-1].style.display = "block";  
+          }
+          
+    </script>
+
+
+   
+</body>
+</html>
